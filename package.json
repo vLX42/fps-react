@@ -37,6 +37,7 @@
   },
   "name": "fps-react",
   "author": "Peter Biro",
+  "homepage": "https://github.com/vLX42/fps-react#readme",
   "module": "dist/fps-react.esm.js",
   "size-limit": [
     {
