@@ -39,6 +39,17 @@
   "author": "Peter Biro <vlx@vlx.dk>",
   "homepage": "https://github.com/vLX42/fps-react#readme",
   "repository": "https://github.com/vLX42/fps-react",
+  "keywords": [
+    "react",
+    "hook",
+    "hooks",
+    "component",
+    "fps",
+    "performance",
+    "analyzer",
+    "stats",
+    "detect"
+  ],
   "module": "dist/fps-react.esm.js",
   "size-limit": [
     {
