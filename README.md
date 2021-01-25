@@ -62,16 +62,18 @@ render(<App />, document.body);
 
 ## useFPSCore
 This is a hook for getting an array with FPS, the last element in the array contains the current frame rate.
-#### Usage
-```javascript
-import { useFPSCore } from 'fps-react'
-const { fps } = useFPSCore({ fpsHistory: 50, fpsSampleRate: 1000 })
-```
+
 #### Parameters
 | Parameter     | Type     | Description                                                        |
 |---------------|----------|--------------------------------------------------------------------|
 | fpsHistory    | number   | Number of FPS stored, default: 50                                  |
 | fpsSampleRate | number   | How offent the FPS is updated, default: 1000                       |
+
+#### Usage
+```javascript
+import { useFPSCore } from 'fps-react'
+const { fps } = useFPSCore({ fpsHistory: 50, fpsSampleRate: 1000 })
+```
 
 ## Credits
 Inspired by https://github.com/sebslomski/react-stats and https://github.com/mrdoob/stats.js.
