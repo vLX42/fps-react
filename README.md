@@ -1,6 +1,6 @@
 # FPS React
 
-FPS React is a small package with some usefull tools to detect low frame rate, showing FPS stats or just get the raw FPS data.
+FPS React is a small package with some usefull hooks to detect low frame rate, showing FPS stats or just get the raw FPS data.
 
 
 ## useFPSDetect
@@ -20,6 +20,7 @@ useEffect(() => {
 
 ## FPSStats
 ![FPSStats](https://i.imgur.com/6ur4klV.png)
+
 Stats can be placed on page, the stats are rendered as a svg image
 
 ### Parameters
@@ -68,3 +69,5 @@ const { fps } = useFPSCore({ fpsHistory: 50, fpsSampleRate: 1000 })
 | fpsHistory    | number   | Number of FPS stored, default: 50                                  |
 | fpsSampleRate | number   | How offent the FPS is updated, default: 1000                       |
 
+## Credits
+Inspired by https://github.com/sebslomski/react-stats and https://github.com/mrdoob/stats.js.
