@@ -16,7 +16,7 @@ export const FPSStats = ({
   left = 2,
   bottom = 'auto',
   right = 'auto',
-  fpsSampleRate = 1000
+  fpsSampleRate = 1000,
 }: FPSStatsProps) => {
   const { fps } = useFPSCore({ fpsHistory, fpsSampleRate })
 
@@ -66,4 +66,3 @@ export const FPSStats = ({
     </div>
   )
 }
-
