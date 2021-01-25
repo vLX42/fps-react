@@ -76,7 +76,7 @@ const { fps } = useFPSCore({ fpsHistory: 50, fpsSampleRate: 1000 })
 ```
 
 ## Credits
-Inspired by https://github.com/sebslomski/react-stats and https://github.com/mrdoob/stats.js.
+Inspired by https://github.com/sebslomski/react-stats, https://github.com/tibotiber/react-fps-stats and https://github.com/mrdoob/stats.js.
 
 ## Demo
 You can see the hook in action on my person page: https://vlx.dk/
