@@ -2,6 +2,14 @@
 
 FPS React is a small package with some usefull hooks to detect low frame rate, showing FPS stats or just get the raw FPS data.
 
+## Install
+```
+npm i fps-react
+
+or
+
+yarn add fps-react
+```
 
 ## useFPSDetect
 Used for detecting low frame rate and maybe disable effect to improve preformace.
