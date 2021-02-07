@@ -39,27 +39,30 @@ export const FPSStats = ({
   }
 
   const fpsStatsStyle = {
-    width: '100%',
-    paddingBottom: '3px',
+    width: '73px',
+    position: 'absolute' as 'absolute',
+    left: 0,
+    bottom: 0,
+    padding: '4px',
   }
   const width = fpsHistory * 10
 
   return (
     <div style={wrapperStyle}>
       <span>{fps[fps.length - 1]} FPS</span>
-      <svg viewBox={`0 0 ${width} 220`} style={fpsStatsStyle}>
+      <svg viewBox={`0 0 ${width} 250`} style={fpsStatsStyle}>
         <polyline
           id="pol"
           fill="#fff"
           stroke="#fff"
           points={
-            '0 220,' +
+            '0 250,' +
             fps
               .slice()
               .reverse()
-              .map((fps, i) => `${i * 20} ${210 - fps * 3}`)
+              .map((fps, i) => `${i * 20} ${250 - fps * (250 / 60)}`)
               .join('\r\n') +
-            `,${(fps.length - 1) * 20} 220`
+            `,${(fps.length - 1) * 20} 250`
           }
         />
       </svg>

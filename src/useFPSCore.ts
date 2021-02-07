@@ -17,11 +17,9 @@ export const useFPSCore = ({
     _setFrames(data)
   }
 
-  const [prevTime, _setPrevTime] = useState<number>(+new Date())
-  const prevTimeRef = useRef<number>(prevTime)
+  const prevTimeRef = useRef<number>(+new Date())
   const setPrevTime = (data: number) => {
     prevTimeRef.current = data
-    _setPrevTime(data)
   }
 
   const [fps, _setFps] = useState<number[]>([])
